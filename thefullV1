@@ -1,0 +1,19 @@
+if game.PlaceId == 2788229376 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Arks Menu V1", "Ocean")
+    local PlayerTab = Window:NewTab("Player")
+    local PlatyerSection = PlayerTab:NewSection("Player")
+    PlatyerSection:NewSlider("WalkSpeed", "SliderInfo", 300, 0, function(v) -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+    end)
+    PlatyerSection:NewSlider("JumpPower", "SliderInfo", 300, 0, function(v) -- 500 (MaxValue) | 0 (MinValue)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+    end)
+
+
+
+
+
+
+end
+local Section = Tab:NewSection("Section Name")
